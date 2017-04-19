@@ -1,4 +1,5 @@
 *{
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9,11 +10,11 @@
 #contenedor{
   width: auto;
   margin: 0 auto;
-  padding: 10%;
+  padding: 10% 30%;
 }
 .cancha{
-  width:500px;
-  height: 300px;
+  width:510px;
+  height: 310px;
   background-color: #8eb280;
   position: relative;
 }
@@ -22,8 +23,8 @@
   width: 480px;
   height: 280px;
   position: absolute;
-  top:9px;
-  left: 9px;
+  top:14px;
+  left: 14px;
 }
 
 .arco{
@@ -74,4 +75,11 @@
 .circulo .bolita{
   top: -70px;
   left: 14px;
+}
+
+.texto{
+  font-size: 9px;
+  position: absolute;
+  bottom: -12px;
+  right: 0;
 }

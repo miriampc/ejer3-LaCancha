@@ -10,10 +10,14 @@ window.addEventListener('load',function(){
 
   var cancha=document.createElement('div');
   var borde=document.createElement('div');
+  var texto=document.createElement('span');
 
   cancha.classList.add("cancha");
   borde.classList.add("borde");
   borde.classList.add("border");
+  texto.classList.add("texto");
+  texto.appendChild(document.createTextNode("Laboratoria 2015 &copy; MadeByGus"));
+  borde.appendChild(texto);
   cancha.appendChild(borde);
 
   objetosHijo.forEach(function(e){
