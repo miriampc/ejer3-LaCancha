@@ -2,3 +2,76 @@
   margin: 0;
   padding: 0;
 }
+
+.border{
+  border: 1px solid #fff;
+}
+#contenedor{
+  width: auto;
+  margin: 0 auto;
+  padding: 10%;
+}
+.cancha{
+  width:500px;
+  height: 300px;
+  background-color: #8eb280;
+  position: relative;
+}
+
+.borde{
+  width: 480px;
+  height: 280px;
+  position: absolute;
+  top:9px;
+  left: 9px;
+}
+
+.arco{
+  width: 70px;
+  height: 140px;
+}
+
+.left{
+  border-left: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+
+.right{
+  border-right: none;
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+.circulo{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 105px;
+  left: 205px;
+}
+
+.bolita{
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.left .bolita{
+  right: -7px;
+}
+
+.right .bolita{
+  left: -14px;
+  bottom: 0;
+}
+
+.circulo .bolita{
+  top: -70px;
+  left: 14px;
+}

@@ -13,6 +13,7 @@ window.addEventListener('load',function(){
 
   cancha.classList.add("cancha");
   borde.classList.add("borde");
+  borde.classList.add("border");
   cancha.appendChild(borde);
 
   objetosHijo.forEach(function(e){
@@ -20,6 +21,7 @@ window.addEventListener('load',function(){
     var nieto=document.createElement('div');
     hijo.setAttribute("class",e.clase1);
     hijo.classList.add(e.clase2);
+    hijo.classList.add("border");
     nieto.setAttribute("class",e.claseNieto);
 
     hijo.appendChild(nieto);
