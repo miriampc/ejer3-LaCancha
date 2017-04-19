@@ -3,7 +3,6 @@ var objetosHijo=[{clase1:"arco", clase2:"left",claseNieto:"bolita"},
                  {clase1:"circulo", clase2:"a", claseNieto:"bolita"}];
 
 window.addEventListener('load',function(){
-  console.log("fsdf");
   var docFragment=document.createDocumentFragment();
   var contenedor=document.createElement('section');
   contenedor.setAttribute("id",'contenedor');
@@ -18,7 +17,6 @@ window.addEventListener('load',function(){
   texto.classList.add("texto");
   texto.appendChild(document.createTextNode("Laboratoria 2015 &copy; MadeByGus"));
   borde.appendChild(texto);
-  cancha.appendChild(borde);
 
   objetosHijo.forEach(function(e){
     var hijo=document.createElement('div');
@@ -27,10 +25,12 @@ window.addEventListener('load',function(){
     hijo.classList.add(e.clase2);
     hijo.classList.add("border");
     nieto.setAttribute("class",e.claseNieto);
-
     hijo.appendChild(nieto);
     borde.appendChild(hijo);
   });
-  contenedor.appendChild(cancha);
+
+  cancha.appendChild(borde);
+  docFragment.appendChild(cancha);
+  contenedor.appendChild(docFragment);
   document.body.appendChild(contenedor);
 });
